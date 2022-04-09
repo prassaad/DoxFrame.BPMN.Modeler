@@ -1,0 +1,37 @@
+{
+  "name": "forms",
+  "prefix": "camunda",
+  "uri": "http://camunda.org/schema/1.0/bpmn",
+  "xml": {
+    "tagAlias": "lowerCase"
+  },
+  "associations": [],
+  "types": [
+    {
+      "name": "BewitchedStartEvent",
+      "extends": [
+        "bpmn:StartEvent"
+      ],
+      "properties": [
+        {
+          "name": "formKey",
+          "isAttr": true,
+          "type": "String"
+        }
+      ]
+    },
+	{
+      "name": "BewitchedUserTask",
+      "extends": [
+        "bpmn:UserTask"
+      ],
+      "properties": [
+        {
+          "name": "formKey",
+          "isAttr": true,
+          "type": "String"
+        }
+      ]
+    }
+  ]
+}
